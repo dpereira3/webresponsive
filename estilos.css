@@ -1,0 +1,45 @@
+.contenedor {
+    height: 350px;
+    background-image: linear-gradient(red, blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.uno {
+    animation-name: girarX;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+@keyframes girarX {
+    from { transform: rotateX(0deg);}
+    to { transform: rotateX(360deg); }
+}
+
+.dos {
+    animation-name: girarY;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes girarY {
+    from { transform: rotateY(0deg);}
+    to { transform: rotateY(360deg); }
+}
+
+.tres {
+    animation-name: girarZ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes girarZ {
+    from { transform: rotateZ(0deg);}
+    to { transform: rotateZ(360deg); }
+}
